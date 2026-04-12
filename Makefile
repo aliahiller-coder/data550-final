@@ -19,3 +19,8 @@ output/figure1.png: code/02_Figure1.R output/clean_data.rds
 .PHONY:clean
 clean:
 	rm output/*
+
+#rule to sync R packages with renv
+.PHONY: install
+install:
+	Rscript -e 'renv::restore(prompt = FALSE)'

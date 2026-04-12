@@ -15,3 +15,7 @@ relationship between the two.
 	- `code/03_RenderReport.R` renders the RMardown report.
 	  - html report should be saved in the main project directory.
 	- `FinalReport_Hiller.Rmd` reads in output from `output/` and creates the report
+
+
+## Package Management
+To sync your packages with the ones used in this project, run `make install` from the command line.

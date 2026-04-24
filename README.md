@@ -16,6 +16,7 @@ This data is from the CDC’s 2017-2018 National Health and Nutrition Examinatio
 * `code/` Scripts to clean data, create table 1, and figure 1
 * `output/` - Generated .Rds and .png files
 * `Makefile` - Automates building the final report and manages outputs
+* `Dockerfile` - 
 * `renv/` - Syncs R packages
 * `renv.lock` - R packages used in this project
 * `FinalReport_Hiller.Rmd` - Final report

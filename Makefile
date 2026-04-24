@@ -1,5 +1,5 @@
 #build final report
-FinalReport_Hiller.Rmd: code/03_RenderReport.R FinalReport_Hiller.Rmd \
+FinalReport_Hiller.html: code/03_RenderReport.R FinalReport_Hiller.Rmd \
   output/clean_data.rds output/table1.rds output/figure1.png
 	Rscript code/03_RenderReport.R
 

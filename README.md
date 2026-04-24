@@ -1,20 +1,34 @@
-# Alia Hiller's DATA550 Final Report
+# Sleep and Vitamin D
 
-## Project Description
-This project explores hours of sleep and vitamin D levels and if there is a \
-relationship between the two.
+Alia Hiller
 
-- `CleanData/` contains the csv file for analysis.
-- `code/` contains all code for the final report.
-  -`code/00_CleanData.R` produces the data object for analysis.
-    - clean data output should be saved to `output/`
-	- `code/01_Table1.R` produces Table 1.
-		- table 1 output should be saved to `output/`
-	- `code/02_Figure1.R` produces the scatter plot
-		- scatter plot should be saved to `output/`
-	- `code/03_RenderReport.R` renders the RMardown report.
-	  - html report should be saved in the main project directory.
-	- `FinalReport_Hiller.Rmd` reads in output from `output/` and creates the report
+DATA550 Final Report | Spring 2026
+
+## Context
+This data is from the CDC’s 2017-2018 National Health and Nutrition Examination Surveys (NHANES), a nationally representative, cross-sectional survey of adults and children in the United States. This analysis aims to:
+
+* Describe the characteristics of the study sample
+* Examine the relationship between hours of sleep and vitamin D levels
+
+## Repository Contents
+
+* `CleanData/`- Contains the csv file for analysis.
+* `code/` Scripts to clean data, create table 1, and figure 1
+* `output/` - Generated .Rds and .png files
+* `Makefile` - Automates building the final report and manages outputs
+* `renv/` - Syncs R packages
+* `renv.lock` - R packages used in this project
+* `FinalReport_Hiller.Rmd` - Final report
+
+
+## Instructions to Build the Report
+
+To build this report from the command line:
+
+1. Navigate to the project's directory (`final`)
+2. Run the `make` command. Under the hood, `make` is:
+  * Loading and cleaning the data
+  * Generating 
 
 
 ## Package Management

@@ -10,6 +10,7 @@ WORKDIR /report
 RUN mkdir CleanData
 RUN mkdir code
 RUN mkdir output
+RUN mkdir finalreport
 
 #copying local repo contents to docker image
 COPY CleanData CleanData
@@ -27,4 +28,4 @@ COPY renv/settings.json renv
 RUN Rscript -e "renv::restore(prompt = FALSE)"
 
 #set container entry point to automatically build the final report
-CMD make FinalReport_Hiller.html
+CMD make && mv FinalReport_Hiller.html finalreport

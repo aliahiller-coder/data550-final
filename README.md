@@ -34,3 +34,6 @@ To build this report from the command line:
 
 ## Package Management
 To sync your packages with the ones used in this project, run `make install` from the command line.
+
+## Docker
+To build the image, type this in the command line `docker run -v $(pwd)/finalreport:/project/finalreport data550_final`

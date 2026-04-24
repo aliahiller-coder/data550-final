@@ -36,4 +36,7 @@ To build this report from the command line:
 To sync your packages with the ones used in this project, run `make install` from the command line.
 
 ## Docker
-To build the image, type this in the command line `docker run -v $(pwd)/finalreport:/project/finalreport data550_final`
+To access the image on DockerHub: https://hub.docker.com/repository/docker/earth2alia/data550_final/general
+
+To build the image, type this in the command line `project_image`
+To run the automated version of the image, type this in the command line `docker_report`
